@@ -169,7 +169,7 @@ button {
   text-transform: uppercase;
 }
 
-button span {
+.emailSpan button span {
   position: absolute;
   left: 15px;
   top: 16px;
@@ -191,4 +191,22 @@ button span {
   color: #222222;
   font-weight: 400;
   font-size: 13pt;
+}
+
+/*signin styling*/
+
+.signinInfo {
+  color: #222222;
+  font-weight: 400;
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.state3 {
+  color: #222222;
+  font-weight: 400;
+  font-size: 18pt;
+  text-align: center;
+  margin-top: 8%;
 }
