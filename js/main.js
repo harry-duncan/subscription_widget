@@ -13,6 +13,17 @@ $(document).ready(function(){
     $('.non-member').addClass("active");
   });
 
+  $('#emailButton').on('click', function(){
 
+    $.ajax("http://response­test.afdevbox.com", {
+      type:'POST',
+      data: {
+        email: $("#emailInput").html()
+      }
+    }).done(function(){
+      console.log("success");
+    })
+
+  });
 
 });
