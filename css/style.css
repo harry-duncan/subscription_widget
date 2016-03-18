@@ -195,13 +195,44 @@ button {
 
 /*signin styling*/
 
-.signinInfo {
+.singin {
+  position: relative;
+  height: 45px;
+  top: 20%;
+}
+
+.signinForm {
+  position: absolute;
+  width: calc(80% - 10%);
+  height: 45px;
+  left: 15%;
+  top: 40px;
+  margin: 0 auto;
+
+}
+
+.emailInput2 {
+  width: 260px;
+}
+
+.username {
+  width: 240px;
+}
+
+.signinButton {
+  width: 175px;
+}
+
+
+div.signinInfo {
   color: #222222;
   font-weight: 400;
-  font-size: 18pt;
+  font-size: 13pt;
   text-align: center;
-  margin-top: 10px;
+  top: 100px;
 }
+
+/*state3 style*/
 
 .state3 {
   color: #222222;

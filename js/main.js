@@ -48,5 +48,7 @@ $(document).ready(function(){
       $('.join-main').append(state3);
     })
   })
+
+
 });
 
