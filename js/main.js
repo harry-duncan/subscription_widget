@@ -33,15 +33,13 @@ $(document).ready(function(){
   $('#member').click(function(){
     $('.non-member').removeClass("active");
     $('.member').addClass("active");
-    $('.join-main').empty();
-    $('.join-main').append(state2);
+    $('.join-main').html(state2);
   });
 
   $('#non-member').click(function(){
     $('.member').removeClass("active");
     $('.non-member').addClass("active");
-    $('.join-main').empty();
-    $('.join-main').append(state1);
+    $('.join-main').html(state1);
   });
 
   // ajax to send the state 1 data to the database and to update on state 3
@@ -55,8 +53,7 @@ $(document).ready(function(){
       }
     }).done(function(){
       console.log("post request successful success");
-      $('.join-main').empty();
-      $('.join-main').append(state3);
+      $('.join-main').html(state3);
     })
   });
 

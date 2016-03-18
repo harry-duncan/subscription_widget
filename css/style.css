@@ -4,8 +4,6 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
 
-/*font-family: 'Open Sans', sans-serif;*/
-
 html, body {
   width: 100%;
   height: 100%;
@@ -40,7 +38,7 @@ html, body {
   text-align: center;
 }
 
-.title h2{
+.title h2 {
   padding-top: 40px;
   margin-bottom: 0;
   margin-top: 0;
@@ -87,7 +85,7 @@ html, body {
   border-left: 1px solid #dedede;
 }
 
-.tab a{
+.tab a {
   position: absolute;
   font-weight: 400;
   font-size: 18px;
@@ -223,7 +221,6 @@ button {
   width: 175px;
 }
 
-
 div.signinInfo p {
   position: absolute;
   top: 100px;
@@ -244,7 +241,6 @@ div.signinInfo p {
   margin-top: 8%;
 }
 
-
 /*responsive */
 
 /*ipad*/
@@ -257,7 +253,7 @@ div.signinInfo p {
     top: 25%;
   }
 
-  .title h2{
+  .title h2 {
     font-size: 28pt;
   }
 
@@ -288,7 +284,7 @@ div.signinInfo p {
     right: 0;
   }
 
-  .tab a{
+  .tab a {
     font-size: 15px;
     margin-top: 18px;
     left: 25%;
@@ -397,7 +393,7 @@ div.signinInfo p {
     top: 25%;
   }
 
-  .title h2{
+  .title h2 {
     font-size: 18pt;
   }
 
@@ -420,7 +416,7 @@ div.signinInfo p {
     height: 60px;
   }
 
-  .tab a{
+  .tab a {
     font-size: 15px;
     margin-top: 18px;
     left: 15%;
@@ -536,7 +532,7 @@ div.signinInfo p {
     width: calc(100% - 5%);
   }
 
-  .title h2{
+  .title h2 {
     font-size: 16pt;
   }
 
@@ -665,4 +661,3 @@ div.signinInfo p {
   }
 
 }
-
