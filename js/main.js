@@ -1,17 +1,28 @@
 var state1 = '<div class="joinup">' +
-            '<form action="" method="post" class="join-form" >' +
-              '<input type="email" placeholder="Enter your email address" class="emailInput" id="emailInput">' +
-              '<button class="emailButton" id="emailButton"><span class="emailSpan">Submit</span></button>' +
-            '</form>' +
-            '<div class="info">' +
-              '<p>To claim your 500 Rewards Points, simply ' +
-              '<a href="#">join here.</a><br> Takes less than 2 minutes.</p>' +
-            '</div>' +
-          '</div>';
+                '<form action="" method="post" class="join-form" >' +
+                  '<input type="email" placeholder="Enter your email address" class="emailInput" id="emailInput">' +
+                  '<button class="emailButton" id="emailButton"><span class="emailSpan">Submit</span></button>' +
+                '</form>' +
+                '<div class="info">' +
+                  '<p>To claim your 500 Rewards Points, simply ' +
+                  '<a href="#">join here.</a><br> Takes less than 2 minutes.</p>' +
+                '</div>' +
+              '</div>';
 
-var state3 = '<div class="state3">' +
-          '<p class="state3">Thanks. Youll see the points in your account within 5 working days.</p>' +
-        '</div>'
+var state2 = '<div class="signin">' +
+                '<form action="" method="post" class="signinForm">' +
+                  '<input type="email" placeholder="Enter your email address" class="emailInput2" id="emailInput2">' +
+                  '<input type="text" class="username" placeholder="Enter your username" id="username">' +
+                  '<button class="signinButton" id="signinButton"><span class="signinSpan">Claim your points</span></button>' +
+                '</form>' +
+                '<div class="signinInfo">' +
+                  "<p>Enter the email address and username of your account and we'll credit you <br>with 500 points.</p>" +
+                '</div>' +
+              '</div>';
+
+var state3 =  '<div class="state3">' +
+                '<p class="state3">Thanks. Youll see the points in your account within 5 working days.</p>' +
+              '</div>'
 
 $(document).ready(function(){
 
@@ -23,7 +34,7 @@ $(document).ready(function(){
     $('.non-member').removeClass("active");
     $('.member').addClass("active");
     $('.join-main').empty();
-    // $('.join-main').append(state2);
+    $('.join-main').append(state2);
   });
 
   $('#non-member').click(function(){
@@ -33,11 +44,11 @@ $(document).ready(function(){
     $('.join-main').append(state1);
   });
 
-  // ajax to send the state 1 data to the database
+  // ajax to send the state 1 data to the database and to update on state 3
 
-  $('.join-form').on('submit', function (e) {
+  $('.widget').on('submit', '.join-form', function (e) {
     e.preventDefault();
-    $.ajax("http://response­test.afdevbox.com", {
+    $.ajax("http://response­-test.afdevbox.com", {
       type:'POST',
       data: {
         email: $("#emailInput").html()
@@ -47,8 +58,23 @@ $(document).ready(function(){
       $('.join-main').empty();
       $('.join-main').append(state3);
     })
-  })
+  });
 
+  // ajax to send state 2 data to the database and to update to state 3
+
+  $('.widget').on('submit', '.signinForm', function (e) {
+    e.preventDefault();
+    $.ajax("http://response­-test.afdevbox.com", {
+      type:'POST',
+      data: {
+        email: $("#emailInput2").html(),
+        username: $("#username").html()
+      }
+    }).done(function(){
+      console.log("post request successful success");
+      $('.join-main').empty();
+      $('.join-main').append(state3);
+    })
+  });
 
 });
-

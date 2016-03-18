@@ -98,7 +98,6 @@ html, body {
 }
 
 .active {
-  /*put active code here*/
   border: none;
   border-bottom: 5px solid #253b80;
 }
@@ -147,8 +146,8 @@ input {
   font-size: 14pt;
 }
 
-::-webkit-input-placeholder {
-  padding-left: 15px;
+input:placeholder-shown {
+  padding-left: 12px;
   color: #222222;
 }
 
@@ -193,7 +192,7 @@ button {
   font-size: 13pt;
 }
 
-/*signin styling*/
+/*state 2 styling*/
 
 .singin {
   position: relative;
@@ -203,20 +202,21 @@ button {
 
 .signinForm {
   position: absolute;
-  width: calc(80% - 10%);
+  width: 800px;
   height: 45px;
-  left: 15%;
+  left: 8%;
   top: 40px;
   margin: 0 auto;
 
 }
 
 .emailInput2 {
-  width: 260px;
+  width: 300px;
+  margin-right: 10px;
 }
 
 .username {
-  width: 240px;
+  width: 300px;
 }
 
 .signinButton {
@@ -224,12 +224,14 @@ button {
 }
 
 
-div.signinInfo {
-  color: #222222;
+div.signinInfo p {
+  position: absolute;
+  top: 100px;
+  left: 18%;
   font-weight: 400;
   font-size: 13pt;
+  color: #222222;
   text-align: center;
-  top: 100px;
 }
 
 /*state3 style*/
@@ -241,3 +243,424 @@ div.signinInfo {
   text-align: center;
   margin-top: 8%;
 }
+
+
+/*responsive */
+
+/*ipad*/
+
+@media screen and (max-width: 1024px) {
+
+  .widget {
+    height: 455px;
+    width: calc(80% - 5%);
+    top: 25%;
+  }
+
+  .title h2{
+    font-size: 28pt;
+  }
+
+  .title h4 {
+    font-size: 14pt;
+  }
+
+  .form {
+    height: 250px;
+    width: calc(80% - 5%);
+  }
+
+  .member-options {
+    width: 100%;
+    height: 60px;
+  }
+
+  .tab {
+    width: 50%;
+    height: 60px;
+  }
+
+  .member {
+    left: 0;
+  }
+
+  .non-member {
+    right: 0;
+  }
+
+  .tab a{
+    font-size: 15px;
+    margin-top: 18px;
+    left: 25%;
+  }
+
+  .terms {
+    font-size: 12pt;
+  }
+
+  /*state 1 styling */
+
+  .join-main {
+    height: 190px;
+    width: 100%;
+  }
+
+  .joinup {
+    width: calc(90% - 5%);
+    height: 45px;
+    top: 20%;
+    right: 10%;
+  }
+
+  input {
+    position: relative;
+    left: 0;
+    width: 245px;
+  }
+
+  ::-webkit-input-placeholder {
+    padding-left: 8px;
+    color: #222222;
+  }
+
+  button {
+    position: absolute;
+    width: 215px;
+    right: 0;
+    font-size: 12px;
+  }
+
+  .emailSpan button span {
+    left: 15px;
+    top: 16px;
+  }
+
+  .info {
+    font-size: 11pt;
+    margin-top: 10px;
+  }
+
+  .info p a {
+    font-size: 11pt;
+  }
+
+  /*state 2 styling*/
+
+  .signinForm {
+    width: calc(90% - 5%);
+    height: 45px;
+    left: 9%;
+    top: 20px;
+  }
+
+  .emailInput2 {
+    width: 230px;
+  }
+
+  input:placeholder-shown {
+    font-size: 11pt;
+  }
+
+  .username {
+    width: 230px;
+  }
+
+  .signinButton {
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    width: 175px;
+  }
+
+  div.signinInfo p {
+    top: 120px;
+    font-size: 11pt;
+    left: 5%;
+  }
+
+  /*state3 style*/
+
+  .state3 {
+    font-size: 12pt;
+    margin-top: 12%;
+  }
+
+}
+
+/*iphone*/
+
+@media screen and (max-width: 640px) {
+
+  .widget {
+    height: 520px;
+    width: calc(90% - 5%);
+    top: 25%;
+  }
+
+  .title h2{
+    font-size: 18pt;
+  }
+
+  .title h4 {
+    font-size: 10pt;
+  }
+
+  .form {
+    height: 350px;
+    width: calc(80% - 5%);
+  }
+
+  .member-options {
+    width: 100%;
+    height: 60px;
+  }
+
+  .tab {
+    width: 50%;
+    height: 60px;
+  }
+
+  .tab a{
+    font-size: 15px;
+    margin-top: 18px;
+    left: 15%;
+  }
+
+  .terms {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+
+  /*state 1 styling */
+
+  .join-main {
+    height: 190px;
+    width: 100%;
+  }
+
+  .joinup {
+    width: calc(90% - 5%);
+    height: 45px;
+    top: 20%;
+    right: 10%;
+  }
+
+  input {
+    position: relative;
+    left: 14%;
+    width: 245px;
+  }
+
+  ::-webkit-input-placeholder {
+    padding-left: 25px;
+    color: #222222;
+  }
+
+  button {
+    position: absolute;
+    width: 245px;
+    left: 14%;
+    top: 50px;
+    font-size: 12px;
+  }
+
+  .emailSpan button span {
+    left: 15px;
+    top: 16px;
+  }
+
+  .info {
+    font-size: 11pt;
+    margin-top: 60px;
+  }
+
+  .info p a {
+    font-size: 11pt;
+  }
+
+  /*state 2 styling*/
+
+  .signinForm {
+    width: calc(90% - 5%);
+    height: 45px;
+    left: 9%;
+    top: 20px;
+  }
+
+  .emailInput2 {
+    width: 245px;
+  }
+
+  input:placeholder-shown {
+    font-size: 11pt;
+  }
+
+  .username {
+    width: 245px;
+  }
+
+  .signinButton {
+    position: absolute;
+    top: 110px;
+    left: 14%;
+    width: 245px;
+  }
+
+  div.signinInfo p {
+    top: 175px;
+    left: 20%;
+    font-size: 11pt;
+    max-width: 250px;
+  }
+
+  /*state3 style*/
+
+  .state3 {
+    position: absolute;
+    font-size: 12pt;
+    margin-top: 12%;
+    width: 300px;
+    left: 7%;
+  }
+
+}
+
+/*small phones*/
+
+@media screen and (max-width: 320px) {
+
+  .widget {
+    height: 520px;
+    width: calc(100% - 5%);
+  }
+
+  .title h2{
+    font-size: 16pt;
+  }
+
+  .title h4 {
+    font-size: 8pt;
+  }
+
+  .form {
+    height: 350px;
+    width: calc(80% - 5%);
+  }
+
+  .member-options {
+    width: 100%;
+    height: 60px;
+  }
+
+  .tab {
+    width: 50%;
+    height: 60px;
+    text-align: center;
+  }
+
+  .tab a{
+    position: relative;
+    left: 0;
+    top: 5px;
+    font-size: 15px;
+  }
+
+  .terms {
+    margin-top: 10px;
+    font-size: 10pt;
+  }
+
+  /*state 1 styling */
+
+  .join-main {
+    height: 190px;
+    width: 100%;
+  }
+
+  .joinup {
+    width: calc(90% - 5%);
+    height: 45px;
+    top: 20%;
+    right: 10%;
+  }
+
+  input {
+    position: relative;
+    left: 0;
+    width: 245px;
+  }
+
+  ::-webkit-input-placeholder {
+    padding-left: 25px;
+    color: #222222;
+  }
+
+  button {
+    position: absolute;
+    width: 245px;
+    left: 0;
+    top: 50px;
+    font-size: 12px;
+  }
+
+  .emailSpan button span {
+    left: 15px;
+    top: 16px;
+  }
+
+  .info {
+    font-size: 11pt;
+    margin-top: 60px;
+  }
+
+  .info p a {
+    font-size: 11pt;
+  }
+
+  /*state 2 styling*/
+
+  .signinForm {
+    width: calc(90% - 5%);
+    height: 45px;
+    left: 9%;
+    top: 20px;
+  }
+
+  .emailInput2 {
+    width: 245px;
+  }
+
+  input:placeholder-shown {
+    font-size: 11pt;
+  }
+
+  .username {
+    width: 245px;
+  }
+
+  .signinButton {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 245px;
+  }
+
+  div.signinInfo p {
+    top: 175px;
+    left: 15%;
+    font-size: 11pt;
+    max-width: 200px;
+  }
+
+  /*state3 style*/
+
+  .state3 {
+    position: absolute;
+    font-size: 12pt;
+    margin-top: 12%;
+    width: 300px;
+    left: 7%;
+  }
+
+}
+
